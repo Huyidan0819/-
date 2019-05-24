@@ -1,0 +1,13 @@
+tp5框架使用阿里云发送短信--》
+
+下载后，将文件 Aliyun 放置到 tp5框架根目录下的extend目录下，
+
+
+使用方法：
+	在控制器的方法下面测试下面代码：
+	
+   public function sendMsg()
+    {
+       $res =  \Aliyun\SMS::getInstance()->sendMobileVerifyCode('18581500128');
+       var_dump($res);
+    }
